@@ -1,0 +1,15 @@
+<%- if flash[:notice].present? -%>
+  <p><%= flash[:notice] %></p>
+<%- end -%>
+
+<h1>Add Your Profile</h1>
+
+<%= form_for @smurf_profile do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :profile_photo, "Profile Photo" %>
+  <%= f.file_field :profile_photo %>
+
+  <%= f.submit "Create Profile" %>
+<%- end -%>

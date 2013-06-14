@@ -1,0 +1,2 @@
+module SmurfProfilesHelper
+end
