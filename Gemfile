@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'carrierwave'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,11 +22,13 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'pry-rails'
 end
 
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
+  gem 'valid_attribute'
 end
 
 gem 'jquery-rails'
